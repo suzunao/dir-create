@@ -7,20 +7,20 @@ show_help() {
     echo "  -thm     Crear los directorios en la ruta THM (/\$home/Documents/THM/)"
 }
 
-if [ -z "$1" ] || [ -z "$2" ]; then
-    echo "Parametro no proporcionado."
-    exit 1
+if [ "$1" == "-h" ]; then
+    show_help
+    exit 0
 fi
 
-if [ "$1" == "-h" ] || [ "$2" == "-h" ]; then
-    show_help
-    exit 0 
-fi 
+if [ $# -ne 2 ]; then
+    echo "U"
+    exit 1
+fi
 
 dirnombre=$2
 
 case "$1" in
-    -htb) ruta="$HOME/Documents/HTB/" ;;
+    -htb) ruta="$HOME/Documents/HTB/" ;; 
     -thm) ruta="$HOME/Documents/THM/" ;;
     *) echo "Parámetro inválido: usa -htb o -thm"; exit 1 ;;
 esac
@@ -38,8 +38,3 @@ else
     echo "Directorio creado en: $ruta_principal"
     echo "Instala 'tree' para ver la estructura: sudo apt install tree"
 fi
-
-
-
-
-
