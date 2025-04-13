@@ -46,7 +46,7 @@ MáquinaX/
 │   └── flags/          → flags.txt (user, root)
 ├── scripts/            → Scripts de automatización u ofuscación
 ├── notes.md            → Notas personales, pasos, comandos usados
-└── tools/              → Herramientas externas.
+└── tools/              → Herramientas externas
 ```
 
 
