@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Help
 show_help() {
     echo "Uso: $0 <-htb | -thm> <Machine_name>"
     echo "  -h       ayuda"
@@ -8,12 +9,16 @@ show_help() {
 }
 
 if [ "$1" == "-h" ]; then
+    if [ $# -ne 1 ]; then
+        echo "Uso: $0 <-h>"
+        exit 1
+    fi
     show_help
     exit 0
 fi
 
 if [ $# -ne 2 ] || [ -z "$2" ]; then
-    show_help
+    echo "Uso: $0 <-htb | -thm> <Machine_name>"
     exit 1
 fi
 
@@ -24,8 +29,7 @@ case "$1" in
     -htb) ruta="$HOME/Documents/HTB/$dirnombre" ;; 
     -thm) ruta="$HOME/Documents/THM/$dirnombre" ;;
     *) 
-    echo "Parámetro inválido: usa -htb o -thm" 
-    show_help
+    echo "Uso: $0 <-htb | -thm> <Machine_name>" 
     exit 1 ;;
 esac
 
@@ -33,7 +37,7 @@ esac
 mkdir -p "$ruta"/{enumeration/{web,smb,ftp},scan,exploit,evidence/{screenshots,credentials,flags},scripts,notes,tools}
 
 
-# verifica si esta instalado tree
+# verifica si esta instalado tree y muestra la estructura de directrios 
 if command -v tree &>/dev/null; then
     tree "$ruta"
 else

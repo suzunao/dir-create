@@ -19,7 +19,6 @@ git clone https://github.com/suzunao/dir-pent.git
 ```
 cd dir-pent
 chmod +x dirpent.sh 
-
 ```
 3. Ejecuta el script:
 
