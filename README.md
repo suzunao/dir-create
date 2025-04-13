@@ -1,12 +1,12 @@
-# DirPent
+# 📁 DirPent
 
 ## Función
 
-Este pequeño script automatiza la creación directorios, útil para mantener ordenada la información durante la resolución de máquinas de Hack The Box (HTB) o CTF en TryHackMe (THM).
+DirPent es un pequeño script Bash que automatiza la creación de una estructura de directorios organizada, pensada para facilitar el registro, análisis y documentación durante la resolución de máquinas en plataformas como Hack The Box (HTB) y TryHackMe (THM).
 
-Su objetivo es crear una estructura de directorios donde puedas almacenar escaneos, exploits, evidencias, scripts y herramientas utilizadas en tus prácticas de pentesting.
+Su objetivo principal es ayudarte a mantener un entorno limpio y bien estructurado donde puedas almacenar escaneos, exploits, evidencias, scripts, herramientas y notas utilizadas en tus prácticas de pentesting.
 
-## Uso  
+## 📌 Uso  
 
 1. clona el repositorio:
 
@@ -28,7 +28,7 @@ chmod +x dirpent.sh
 
 > Nota: Asegúrate de tener instalado el comando tree, ya que se utiliza para visualizar la estructura de carpetas.
 
-### Estructura de carpetas.
+### 🗂️ Estructura de carpetas.
 
 La estructura que genera este script es la siguiente:
 
