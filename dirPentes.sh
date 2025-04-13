@@ -31,7 +31,7 @@ case "$1" in
 esac
 
 # para Hack the box & TryHackMe
-mkdir -p "$ruta"/{scan,enumeration/{web,smb,ftp},exploit,evidence/screenshots,scripts,tools}
+mkdir -p "$ruta"/{enumeration/{web,smb,ftp},Scan,exploit,evidence/{screenshots,credentials,flags},scripts,notes,tools}
 
 # verifica si esta instalado tree
 if command -v tree &>/dev/null; then
