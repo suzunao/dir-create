@@ -2,7 +2,7 @@
 
 ## Función
 
-Este pequeño script automatiza la creación de estructuras de directorios organizados, especialmente útil para mantener un registro detallado de la información durante la resolución de máquinas de Hack The Box (HTB) o CTF en TryHackMe (THM).
+Este pequeño script automatiza la creación directorios, especialmente útil para mantener un registro detallado de la información durante la resolución de máquinas de Hack The Box (HTB) o CTF en TryHackMe (THM).
 
 Su objetivo es ayudarte a mantener un entorno ordenado donde puedas almacenar escaneos, exploits, evidencias, scripts y herramientas utilizadas en tus prácticas de pentesting.
 
