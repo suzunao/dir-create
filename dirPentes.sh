@@ -27,10 +27,12 @@ case "$1" in
 esac
 
 #veriica si en la ruta esta el  directirio HTB & THM haciendo una comparacion.
-[ ! -d "$ruta" ] && mkdir -p "$ruta"
-
-ruta_principal="$ruta$dirnombre"
-mkdir -p "$ruta_principal"
+if [  ] && [  ]; then
+    echo ""
+else
+    [  ]
+    [  ]
+fi
 
 # para Hack the box & TryHackMe
 mkdir -p "$ruta_principal"/{scan,enumeration/{web,smb,ftp},exploit,evidence/screenshots,scripts,tools}
