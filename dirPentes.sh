@@ -21,26 +21,22 @@ dirnombre=$2
 
 # obciones de ruta
 case "$1" in
-    -htb) ruta="$HOME/Documents/HTB/" ;; 
-    -thm) ruta="$HOME/Documents/THM/" ;;
+    -htb) ruta="$HOME/Documents/HTB/"
+    [ ! -d "$ruta" ] && mkdir -p "$ruta"
+    ;; 
+    -thm) ruta="$HOME/Documents/THM/" 
+    [ ! -d "$ruta" ] && mkdir -p "$ruta"
+    ;;
     *) echo "Parámetro inválido: usa -htb o -thm"; exit 1 ;;
 esac
 
-#veriica si en la ruta esta el  directirio HTB & THM haciendo una comparacion.
-if [ "" ] && [  ]; then
-    echo ""
-else
-    [ "" ]
-    [  ]
-fi
-
 # para Hack the box & TryHackMe
-mkdir -p "$ruta_principal"/{scan,enumeration/{web,smb,ftp},exploit,evidence/screenshots,scripts,tools}
+mkdir -p "$ruta"/{scan,enumeration/{web,smb,ftp},exploit,evidence/screenshots,scripts,tools}
 
 # verifica si esta instalado tree
 if command -v tree &>/dev/null; then
-    tree "$ruta_principal"
+    tree "$ruta"
 else
-    echo "Directorio creado en: $ruta_principal"
+    echo "Directorio creado en: $ruta"
     echo "Instala 'tree' para ver la estructura: sudo apt install tree"
 fi
