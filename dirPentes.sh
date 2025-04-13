@@ -27,10 +27,10 @@ case "$1" in
 esac
 
 #veriica si en la ruta esta el  directirio HTB & THM haciendo una comparacion.
-if [  ] && [  ]; then
+if [ "" ] && [  ]; then
     echo ""
 else
-    [  ]
+    [ "" ]
     [  ]
 fi
 
