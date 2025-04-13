@@ -4,11 +4,11 @@
 
 Este pequeño script automatiza la creación directorios, útil para mantener ordenada la información durante la resolución de máquinas de Hack The Box (HTB) o CTF en TryHackMe (THM).
 
-Su objetivo es ayudarte a mantener un entorno ordenado donde puedas almacenar escaneos, exploits, evidencias, scripts y herramientas utilizadas en tus prácticas de pentesting.
+Su objetivo es crear una estructura de directorios donde puedas almacenar escaneos, exploits, evidencias, scripts y herramientas utilizadas en tus prácticas de pentesting.
 
 ## Uso  
 
-1. clona el repositorio 
+1. clona el repositorio:
 
 ```
 git clone https://github.com/suzunao/dir-pent.git
@@ -26,7 +26,7 @@ chmod +x dirpent.sh
 ./dirPentes.sh <-htb | -thm> <NombreDeLaMaquina>
 ```
 
->Nota: Asegúrate de tener instalado el comando tree, ya que se utiliza para visualizar la estructura de carpetas.
+> Nota: Asegúrate de tener instalado el comando tree, ya que se utiliza para visualizar la estructura de carpetas.
 
 ### Estructura de carpetas.
 
