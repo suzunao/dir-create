@@ -18,7 +18,7 @@ if [ "$1" == "-h" ]; then
 fi
 
 if [ $# -ne 2 ] || [ -z "$2" ]; then
-    echo "Uso: $0 <-htb | -thm> <Machine_name>"
+    echo "Uso: $0 < -htb | -thm > <Machine_name>"
     exit 1
 fi
 
@@ -29,7 +29,7 @@ case "$1" in
     -htb) ruta="$HOME/Documents/HTB/$dirnombre" ;; 
     -thm) ruta="$HOME/Documents/THM/$dirnombre" ;;
     *) 
-    echo "Uso: $0 <-htb | -thm> <Machine_name>" 
+    echo "Uso: $0 < -htb | -thm > <Machine_name>" 
     exit 1 ;;
 esac
 
