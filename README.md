@@ -42,8 +42,7 @@ MáquinaX/
 ├── exploit/            → Scripts de explotación (propios o ajenos)
 ├── evidence/
 │   ├── screenshots/    → Capturas de pantalla del proceso
-│   ├── credentials/    → Hashes, contraseñas extraídas
-│   └── flags/          → flags.txt (user, root)
+│   └── credentials_and_flags/    → Hashes, contraseñas extraídas y flags.txt (user, root)
 ├── scripts/            → Scripts de automatización u ofuscación
 ├── notes.md            → Notas personales, pasos, comandos usados
 └── tools/              → Herramientas externas
